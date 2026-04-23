@@ -1,0 +1,588 @@
+/* =============================================
+   TERAISM® Brand Site Custom CSS
+   ベース: Lightning Theme (Vektor,Inc.) + Bootstrap 4
+   ============================================= */
+
+/* ----- 既存サイトから引き継ぎ (wp-custom-css 準拠) ----- */
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media (min-width: 992px) {
+    .mainSection-col-two {
+        width: 100%;
+        float: left;
+    }
+}
+
+.page-header {
+    display: none;
+}
+
+.wp-block-button .wp-block-button__link.has-background:hover {
+    background-color: #4DB142 !important;
+}
+
+.container.siteHeadContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gMenu > li:before {
+    border-bottom: 1px solid #ff7a26;
+}
+
+.device-pc .gMenu > li > a {
+    padding: 5px 1.8em;
+}
+
+@media (min-width: 1200px) {
+    .gMenu {
+        gap: 2%;
+    }
+}
+
+.vk-mobile-nav-menu-btn {
+    right: 5px;
+    left: inherit;
+}
+
+/* ----- 共通リセット・ベース ----- */
+body {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+    color: #333;
+    background-color: #f1f2f3;
+    line-height: 1.8;
+}
+
+a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== NEW SITE CUSTOM ===== */
+/* 以下はモックアップ用の追加スタイルです。
+   Lightningテーマに移植する際はWordPressカスタマイザーの
+   「追加CSS」にコピペしてください。 */
+
+/* --- サイトヘッダー上書き（緑化） --- */
+.siteHeader {
+    background-color: #1b5e20;
+    border-bottom: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.siteHeader .navbar-brand a,
+.siteHeader .siteHeader_logo a span {
+    color: #fff;
+}
+
+.siteHeader .gMenu > li > a,
+.siteHeader .gMenu > li > a .gMenu_name {
+    color: #fff;
+}
+
+.siteHeader .gMenu > li:before {
+    border-bottom-color: #66bb6a;
+}
+
+.siteHeader .gMenu > li > a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* --- ヒーローセクション --- */
+.hero-section {
+    background: linear-gradient(135deg, #1b5e20 0%, #388e3c 50%, #66bb6a 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 42px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    line-height: 2.0;
+}
+
+/* --- ボタンスタイル（#4db142 ベース） --- */
+.wp-block-button__link.btn-green,
+.btn-green {
+    background-color: #4db142;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 36px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-green:hover {
+    background-color: #3d8b35;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.btn-green-outline {
+    background-color: transparent;
+    color: #4db142;
+    border: 2px solid #4db142;
+    border-radius: 100px;
+    padding: 10px 32px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-green-outline:hover {
+    background-color: #4db142;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- セクション共通 --- */
+.section-block {
+    padding: 60px 0;
+}
+
+.section-block.bg-light-green {
+    background-color: #e8f5e9;
+}
+
+.section-block .section-title {
+    text-align: center;
+    font-size: 26px;
+    color: #1b5e20;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-block .section-subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #66bb6a;
+    margin: 0 auto 40px;
+}
+
+/* --- 製品カード --- */
+.product-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.product-card-img {
+    width: 100%;
+    height: 200px;
+    background-color: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #999;
+}
+
+.product-card-body {
+    padding: 20px;
+}
+
+.product-card-body h3 {
+    font-size: 16px;
+    color: #1b5e20;
+    margin-bottom: 8px;
+}
+
+.product-card-body .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.product-card-body .desc {
+    font-size: 13px;
+    color: #666;
+}
+
+.product-badge {
+    display: inline-block;
+    background-color: #ff6f00;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* --- 動画埋め込み (wp-block-embed 互換) --- */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- ユーザーレポート --- */
+.report-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1b5e20;
+    display: block;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #666;
+}
+
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filter-tab {
+    padding: 6px 18px;
+    border: 1px solid #66bb6a;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #2e7d32;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #fff;
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+    background-color: #1b5e20;
+    color: #fff;
+    border-color: #1b5e20;
+}
+
+.report-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.report-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.report-user {
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+.report-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.report-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 6px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #555;
+}
+
+.report-comment {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+    padding: 15px;
+    background-color: #f9fbe7;
+    border-radius: 6px;
+    border-left: 3px solid #66bb6a;
+}
+
+.report-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.report-cta h3 {
+    font-size: 22px;
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+/* --- FAQ --- */
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 0;
+}
+
+.faq-question {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.faq-question::before {
+    content: "Q";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1b5e20;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-answer {
+    font-size: 14px;
+    color: #555;
+    line-height: 2.0;
+    padding-left: 30px;
+}
+
+/* --- 法人向け --- */
+.btob-card {
+    text-align: center;
+    padding: 35px 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s;
+}
+
+.btob-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.btob-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.btob-card h3 {
+    font-size: 18px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+/* --- 会社概要テーブル --- */
+.company-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto 0;
+    border-collapse: collapse;
+}
+
+.company-table th,
+.company-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.company-table th {
+    width: 160px;
+    color: #1b5e20;
+    font-weight: bold;
+    background-color: #e8f5e9;
+}
+
+/* --- 注意事項ボックス --- */
+.notice-box {
+    background-color: #fff3e0;
+    border: 1px solid #ffe0b2;
+    border-radius: 8px;
+    padding: 20px 25px;
+    font-size: 13px;
+    line-height: 2.0;
+    color: #555;
+}
+
+.notice-box strong {
+    color: #e65100;
+}
+
+/* --- フッター上書き（緑化） --- */
+.siteFooter {
+    background-color: #1b5e20;
+    border-top: none;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.siteFooter a {
+    color: rgba(255,255,255,0.8);
+}
+
+.siteFooter a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.footer-nav-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-nav-col h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-nav-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav-col li {
+    margin-bottom: 8px;
+}
+
+.footer-nav-col li a {
+    font-size: 13px;
+}
+
+.copySection p {
+    color: rgba(255,255,255,0.6);
+    font-size: 12px;
+}
+
+/* --- 下層ページヘッダー --- */
+.new-page-header {
+    background: linear-gradient(135deg, #1b5e20, #388e3c);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.new-page-header h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.new-page-header p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* --- レスポンシブ補正 --- */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 15px;
+    }
+    .hero-section h1 {
+        font-size: 26px;
+    }
+    .section-block {
+        padding: 40px 0;
+    }
+    .section-block .section-title {
+        font-size: 20px;
+    }
+    .report-stats {
+        gap: 20px;
+    }
+    .stat-number {
+        font-size: 28px;
+    }
+    .footer-nav-grid {
+        flex-direction: column;
+    }
+    .company-table th,
+    .company-table td {
+        display: block;
+        width: 100%;
+    }
+}
