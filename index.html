@@ -1,361 +1,222 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="ja">
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>トップページ ‣ TERAISM® 有限会社ライトテクニカル</title>
-    <meta name="description" content="TERAISM®(テラリズム)で素敵なカーライフをあなたに。独自の金属特殊加工技術で、愛車のポテンシャルを引き出します。">
-
-    <!-- Bootstrap 4 (Lightning テーマ準拠) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- Font Awesome 6 (Lightning テーマ準拠) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- カスタムCSS -->
-    <link rel="stylesheet" href="css/custom.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TERAISM® 公式ショップ｜有限会社ライトテクニカル</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="home page device-pc">
+<body>
 
-    <!-- ========== ヘッダー (Lightning: .siteHeader 構造) ========== -->
-    <header class="siteHeader">
-        <div class="container siteHeadContainer">
-            <div class="navbar-header">
-                <h1 class="navbar-brand siteHeader_logo">
-                    <a href="index.html">
-                        <span style="color:#fff; font-size:20px; font-weight:bold; letter-spacing:2px;">
-                            TERAISM®
-                            <small style="display:block; font-size:11px; font-weight:normal; opacity:0.8;">有限会社ライトテクニカル</small>
-                        </span>
-                        <!-- 本番では下記のように画像ロゴに差し替え -->
-                        <!-- <span><img src="images/logo.png" alt="有限会社ライトテクニカル"></span> -->
-                    </a>
-                </h1>
-            </div>
+<!-- ========== Header ========== -->
+<header class="siteHeader">
+  <div class="container">
+    <a href="index.html" class="siteLogo">TERAISM®<span>by Light Technical</span></a>
+    <button class="menuToggle" onclick="document.querySelector('.gMenu').classList.toggle('is-open')"><i class="fas fa-bars"></i></button>
+    <ul class="gMenu">
+      <li><a href="index.html" class="is-active">HOME</a></li>
+      <li><a href="shop.html">ショップ</a></li>
+      <li><a href="technology.html">技術紹介</a></li>
+      <li><a href="reports.html">ユーザーズレポート</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="company.html">会社概要</a></li>
+      <li><a href="cart.html" class="cartIcon"><i class="fas fa-shopping-cart"></i><span class="badge">2</span></a></li>
+    </ul>
+  </div>
+</header>
 
-            <div id="gMenu_outer" class="gMenu_outer">
-                <nav>
-                    <ul class="menu gMenu vk-menu-acc">
-                        <li class="menu-item current-menu-item"><a href="index.html"><strong class="gMenu_name">ホーム</strong></a></li>
-                        <li class="menu-item"><a href="products.html"><strong class="gMenu_name">製品情報</strong></a></li>
-                        <li class="menu-item"><a href="user-reports.html"><strong class="gMenu_name">ユーザーズレポート</strong></a></li>
-                        <li class="menu-item"><a href="faq.html"><strong class="gMenu_name">よくある質問</strong></a></li>
-                        <li class="menu-item"><a href="company.html"><strong class="gMenu_name">会社概要</strong></a></li>
-                        <li class="menu-item"><a href="contact.html"><strong class="gMenu_name">法人のお客様</strong></a></li>
-                    </ul>
-                </nav>
-            </div>
+<!-- ========== Hero ========== -->
+<section class="hero">
+  <div class="container">
+    <h1>DRIVE YOUR WAY</h1>
+    <p>静電気へのアプローチから生まれた独自技術 TERAISM®。<br>あなたの愛車が持つ本来のポテンシャルを引き出します。</p>
+    <a href="shop.html" class="btn-green">ショップを見る</a>
+  </div>
+</section>
+
+<!-- ========== おすすめ商品 ========== -->
+<section class="section">
+  <div class="container">
+    <div class="section-divider"></div>
+    <h2 class="section-title">おすすめ商品</h2>
+    <p class="section-sub">TERAISM® プロダクトラインナップ</p>
+    <div class="product-grid">
+
+      <!-- EC-13 -->
+      <div class="product-card">
+        <div class="card-img">商品画像：EC-13</div>
+        <div class="card-body">
+          <h3>TERAISM® EC-13</h3>
+          <div class="price">¥6,700 <span class="price-note">(税込)</span></div>
+          <p>20×40mm / 20g｜12V・24V対応 USB-A&C 合計30W</p>
         </div>
-    </header>
+        <div class="card-actions">
+          <a href="product-detail.html" class="btn-outline btn-sm">詳細</a>
+          <button class="btn-green btn-sm btn-cart">カートに入れる</button>
+        </div>
+      </div>
 
-    <!-- ========== ヒーロー ========== -->
-    <div class="hero-section">
-        <h1>DRIVE YOUR WAY</h1>
-        <p>独自の金属特殊加工技術 TERAISM® で<br>愛車の持つポテンシャルを引き出す</p>
-        <a href="products.html" class="btn-green">製品を見る</a>
+      <!-- EC-13SP -->
+      <div class="product-card">
+        <div class="card-img">商品画像：EC-13SP</div>
+        <div class="card-body">
+          <h3>TERAISM® EC-13SP <span class="badge-new">NEW</span></h3>
+          <div class="price">¥7,200 <span class="price-note">(税込)</span></div>
+          <p>20×45mm / 27g｜出力36W｜EC-13上位モデル</p>
+        </div>
+        <div class="card-actions">
+          <a href="shop.html" class="btn-outline btn-sm">詳細</a>
+          <button class="btn-green btn-sm btn-cart">カートに入れる</button>
+        </div>
+      </div>
+
+      <!-- EC-15B2 -->
+      <div class="product-card">
+        <div class="card-img">商品画像：EC-15B2</div>
+        <div class="card-body">
+          <h3>TERAISM® EC-15B2</h3>
+          <div class="price">¥2,800〜 <span class="price-note">(税込)</span></div>
+          <p>USBブースター｜EC-13系との併用推奨</p>
+        </div>
+        <div class="card-actions">
+          <a href="shop.html" class="btn-outline btn-sm">詳細</a>
+          <button class="btn-green btn-sm btn-cart">カートに入れる</button>
+        </div>
+      </div>
+
+      <!-- EX-01SP -->
+      <div class="product-card">
+        <div class="card-img">商品画像：EX-01SP</div>
+        <div class="card-body">
+          <h3>TERAISM® EX-01SP</h3>
+          <div class="price">¥7,800〜 <span class="price-note">(税込)</span></div>
+          <p>80×55×30mm / 187g｜エンジンルーム設置型</p>
+        </div>
+        <div class="card-actions">
+          <a href="shop.html" class="btn-outline btn-sm">詳細</a>
+          <button class="btn-green btn-sm btn-cart">カートに入れる</button>
+        </div>
+      </div>
+
+      <!-- RP-01B -->
+      <div class="product-card">
+        <div class="card-img">商品画像：RP-01B</div>
+        <div class="card-body">
+          <h3>TERAISM® RP-01B</h3>
+          <div class="price">¥3,500〜 <span class="price-note">(税込)</span></div>
+          <p>ステルスブラック｜2個セット</p>
+        </div>
+        <div class="card-actions">
+          <a href="shop.html" class="btn-outline btn-sm">詳細</a>
+          <button class="btn-green btn-sm btn-cart">カートに入れる</button>
+        </div>
+      </div>
+
+    </div><!-- /.product-grid -->
+    <div class="text-center mt-40">
+      <a href="shop.html" class="btn-outline">すべての商品を見る →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 検証動画 ========== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-divider"></div>
+    <h2 class="section-title">検証動画</h2>
+    <p class="section-sub">第三者による実走テスト映像</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/KXNkJelw3Oc?feature=oembed" title="EC-13&EC-15B2 検証動画" allowfullscreen></iframe>
+    </div>
+    <p class="video-caption">※この動画は道楽者のGarage Life様によるプロモーション動画です。</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/6C7YidD9vI8?start=1091&feature=oembed" title="EC-13 検証動画" allowfullscreen></iframe>
+    </div>
+    <p class="video-caption">※この動画は道楽者のGarage Life様によるプロモーション動画です。</p>
+  </div>
+</section>
+
+<!-- ========== ユーザーズレポート ハイライト ========== -->
+<section class="section">
+  <div class="container">
+    <div class="section-divider"></div>
+    <h2 class="section-title">ユーザーズレポート</h2>
+    <p class="section-sub">TERAISM® を体感したお客様の声</p>
+
+    <div class="report-stats">
+      <div class="stat-card"><span class="num">248</span><span class="label">投稿数</span></div>
+      <div class="stat-card"><span class="num">47</span><span class="label">車種</span></div>
+      <div class="stat-card"><span class="num">12</span><span class="label">製品組み合わせ</span></div>
     </div>
 
-    <!-- ========== メインコンテンツ ========== -->
-    <div class="section siteContent">
-        <div class="container">
-            <div class="row">
-                <div class="col mainSection mainSection-col-one">
-                    <article>
-                        <div class="entry-body">
-
-                            <!-- === 製品ハイライト === -->
-                            <div class="section-block">
-                                <h2 class="section-title">PRODUCTS</h2>
-                                <p class="section-subtitle">― 製品ラインナップ ―</p>
-                                <div class="section-divider"></div>
-
-                                <div class="row">
-                                    <!-- EC-13 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="product-card">
-                                            <div class="product-card-img">
-                                                ［EC-13 製品画像］
-                                                <!-- <img src="images/ec13.jpg" alt="TERAISM EC-13"> -->
-                                            </div>
-                                            <div class="product-card-body">
-                                                <span class="product-badge">人気No.1</span>
-                                                <h3>TERAISM EC-13</h3>
-                                                <p class="price">¥6,700</p>
-                                                <p class="desc">シガーソケット挿入タイプ。USB Type-A &amp; Type-C 2ポート / 30W</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- EC-13SP -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="product-card">
-                                            <div class="product-card-img">
-                                                ［EC-13SP 製品画像］
-                                            </div>
-                                            <div class="product-card-body">
-                                                <span class="product-badge">NEW</span>
-                                                <h3>TERAISM EC-13SP</h3>
-                                                <p class="price">価格調整中</p>
-                                                <p class="desc">EC-13の進化版。USB Type-A 2ポート / 36W / SP専用化学処理</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- EC-15B2 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="product-card">
-                                            <div class="product-card-img">
-                                                ［EC-15B2 製品画像］
-                                            </div>
-                                            <div class="product-card-body">
-                                                <h3>TERAISM EC-15B2</h3>
-                                                <p class="price">¥2,800〜</p>
-                                                <p class="desc">USB端子に挿すだけの補助アイテム。EC-13シリーズとの併用推奨</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- EX-01SP -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="product-card">
-                                            <div class="product-card-img">
-                                                ［EX-01SP 製品画像］
-                                            </div>
-                                            <div class="product-card-body">
-                                                <span class="product-badge">上位モデル</span>
-                                                <h3>TERAISM EX-01SP</h3>
-                                                <p class="price">¥7,800〜</p>
-                                                <p class="desc">エンジンルーム設置型。W80×D55×H30mm / 約187g</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- RP-01B -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="product-card">
-                                            <div class="product-card-img">
-                                                ［RP-01B 製品画像］
-                                            </div>
-                                            <div class="product-card-body">
-                                                <h3>TERAISM RP-01B</h3>
-                                                <p class="price">¥3,500〜</p>
-                                                <p class="desc">ステルスブラック アルミ合金製。エアコンホース用（2個セット）</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="has-text-align-center" style="margin-top:30px;">
-                                    <a href="products.html" class="btn-green-outline">全製品を見る →</a>
-                                </p>
-                            </div>
-
-                            <!-- === 検証動画 === -->
-                            <div class="section-block bg-light-green" style="margin-left:-15px; margin-right:-15px; padding-left:15px; padding-right:15px;">
-                                <h2 class="section-title">MOVIE</h2>
-                                <p class="section-subtitle">― 検証動画 ―</p>
-                                <div class="section-divider"></div>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <p class="has-text-align-center has-small-font-size"><strong>▼EC-13・EC-15B2検証動画▼</strong></p>
-                                        <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                                            <div class="wp-block-embed__wrapper">
-                                                <div class="video-wrapper">
-                                                    <iframe
-                                                        title="EC-13・EC-15B2 検証動画"
-                                                        src="https://www.youtube.com/embed/KXNkJelw3Oc?feature=oembed"
-                                                        frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                        referrerpolicy="strict-origin-when-cross-origin"
-                                                        allowfullscreen
-                                                    ></iframe>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                        <p class="has-text-align-center has-small-font-size">※この動画は道楽者のGarage Life様によるプロモーション動画です。</p>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <p class="has-text-align-center has-small-font-size"><strong>▼EC-13検証動画▼</strong></p>
-                                        <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                                            <div class="wp-block-embed__wrapper">
-                                                <div class="video-wrapper">
-                                                    <iframe
-                                                        title="EC-13 パワーチェック検証動画"
-                                                        src="https://www.youtube.com/embed/6C7YidD9vI8?start=1091&amp;feature=oembed"
-                                                        frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                        referrerpolicy="strict-origin-when-cross-origin"
-                                                        allowfullscreen
-                                                    ></iframe>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                        <p class="has-text-align-center has-small-font-size">※この動画は道楽者のGarage Life様によるプロモーション動画です。</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- === ユーザーズレポート（プレビュー） === -->
-                            <div class="section-block">
-                                <h2 class="section-title">USER'S REPORT</h2>
-                                <p class="section-subtitle">― ご利用いただいたお客様の声 ―</p>
-                                <div class="section-divider"></div>
-
-                                <div class="report-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-number">248</span>
-                                        <span class="stat-label">投稿数</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-number">47</span>
-                                        <span class="stat-label">車種</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-number">12</span>
-                                        <span class="stat-label">製品組み合わせ</span>
-                                    </div>
-                                </div>
-
-                                <!-- サンプルレポート -->
-                                <div class="report-card">
-                                    <div class="report-card-header">
-                                        <span class="report-user">ドライバーA さん</span>
-                                        <span class="report-date">2026.04.10</span>
-                                    </div>
-                                    <div class="report-specs">
-                                        <div><strong>車種：</strong>スズキ ハスラー（2022年式）</div>
-                                        <div><strong>走行距離：</strong>82.3 km（一般道70% / 高速30%）</div>
-                                        <div><strong>天候：</strong>晴れ / 18℃</div>
-                                        <div><strong>使用製品：</strong>EC-13 + EC-15B2 ×2</div>
-                                        <div><strong>燃費記録：</strong>19.4 km/L</div>
-                                    </div>
-                                    <div class="report-comment">
-                                        装着後3日目から走りが滑らかになった気がします。特にエアコン使用時の重さが気にならなくなりました。
-                                    </div>
-                                </div>
-
-                                <p class="has-text-align-center" style="margin-top:25px;">
-                                    <a href="user-reports.html" class="btn-green-outline">すべてのレポートを見る →</a>
-                                </p>
-                            </div>
-
-                            <!-- === 法人向け === -->
-                            <div class="section-block bg-light-green" style="margin-left:-15px; margin-right:-15px; padding-left:15px; padding-right:15px;">
-                                <h2 class="section-title">FOR BUSINESS</h2>
-                                <p class="section-subtitle">― 法人のお客様へ ―</p>
-                                <div class="section-divider"></div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="btob-card">
-                                            <div class="btob-icon"><i class="fa-solid fa-car"></i></div>
-                                            <h3>導入のご相談</h3>
-                                            <p style="font-size:13px; color:#666;">社用車・営業車への導入をご検討の法人様に、トライアルプランをご提案いたします。</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="btob-card">
-                                            <div class="btob-icon"><i class="fa-solid fa-handshake"></i></div>
-                                            <h3>販売提携</h3>
-                                            <p style="font-size:13px; color:#666;">レンタカーショップ、カーディーラー、整備工場など、取扱店としてのご提携を承ります。</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="btob-card">
-                                            <div class="btob-icon"><i class="fa-solid fa-wrench"></i></div>
-                                            <h3>OEM・共同開発</h3>
-                                            <p style="font-size:13px; color:#666;">TERAISM®技術を活用した共同開発やOEM製造について、お気軽にご相談ください。</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="has-text-align-center" style="margin-top:30px;">
-                                    <a href="contact.html" class="btn-green">法人お問い合わせ →</a>
-                                </p>
-                            </div>
-
-                        </div>
-                    </article>
-                </div><!-- /.mainSection -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.siteContent -->
-
-    <!-- ========== フッター下バナー (現サイトの .siteContent_after 準拠) ========== -->
-    <div class="section sectionBox siteContent_after">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="wp-block-columns" style="display:flex; flex-wrap:nowrap; gap:15px; justify-content:center; align-items:center; flex-direction:column; margin-bottom:20px;">
-                        <figure class="wp-block-image aligncenter" style="margin-bottom:10px;">
-                            <a href="https://www.amazon.co.jp/stores/TERAISM%E7%87%83%E8%B2%BB%E5%90%91%E4%B8%8A%E7%B3%BB%E3%82%AB%E3%83%BC%E3%83%91%E3%83%BC%E3%83%84/page/D6041CA1-DF77-4AAE-81E8-C6A9E9E9A1BC" target="_blank" rel="noreferrer noopener">
-                                <!-- 本番ではバナー画像に差し替え -->
-                                <span style="display:inline-block; padding:12px 40px; background:#232f3e; color:#fff; border-radius:6px; font-weight:bold;">▶ Amazon ストアで購入</span>
-                            </a>
-                        </figure>
-                        <figure class="wp-block-image aligncenter" style="margin-bottom:10px;">
-                            <a href="https://auctions.yahoo.co.jp/seller/68mBTSA7m4TsArky7vfUf31WWP38V?user_type=c" target="_blank" rel="noreferrer noopener">
-                                <span style="display:inline-block; padding:12px 40px; background:#ff0033; color:#fff; border-radius:6px; font-weight:bold;">▶ ヤフオク! ストアで購入</span>
-                            </a>
-                        </figure>
-                        <figure class="wp-block-image aligncenter">
-                            <a href="https://note.com/teraism" target="_blank" rel="noreferrer noopener">
-                                <span style="display:inline-block; padding:12px 40px; background:#41c9b4; color:#fff; border-radius:6px; font-weight:bold;">▶ TERAISM® note</span>
-                            </a>
-                        </figure>
-                    </div>
-
-                </div>
-            </div>
+    <div class="report-card">
+      <div class="report-header">
+        <div class="avatar"><i class="fas fa-user"></i></div>
+        <div class="user-info">
+          <div class="name">Y.T さん</div>
+          <div class="date">2026.04.10</div>
         </div>
+      </div>
+      <div class="report-meta">
+        <span class="tag">トヨタ ヤリスクロス</span>
+        <span class="tag">EC-13 + EC-15B2</span>
+      </div>
+      <p class="report-body">装着後3日のエイジングを経て、明らかにアクセルレスポンスが良くなりました。通勤片道15kmでの燃費が約1.2km/L向上。ECUリセット後はさらに改善を実感しています。</p>
+      <div class="report-data">
+        <div class="data-item"><span class="data-label">装着前燃費</span><span class="data-value">18.2 km/L</span></div>
+        <div class="data-item"><span class="data-label">装着後燃費</span><span class="data-value">19.4 km/L</span></div>
+        <div class="data-item"><span class="data-label">測定距離</span><span class="data-value">450 km</span></div>
+      </div>
     </div>
 
-    <!-- ========== フッター (Lightning: .siteFooter 構造) ========== -->
-    <footer class="section siteFooter">
-        <div class="container">
-            <div class="footer-nav-grid">
-                <div class="footer-nav-col">
-                    <h4>TERAISM®</h4>
-                    <ul>
-                        <li><a href="index.html">ホーム</a></li>
-                        <li><a href="products.html">製品情報</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-col">
-                    <h4>サポート</h4>
-                    <ul>
-                        <li><a href="faq.html">よくある質問</a></li>
-                        <li><a href="user-reports.html">ユーザーズレポート</a></li>
-                        <li><a href="contact.html">法人のお客様</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-col">
-                    <h4>会社情報</h4>
-                    <ul>
-                        <li><a href="company.html">会社概要</a></li>
-                        <li><a href="https://www.amazon.co.jp/stores/TERAISM" target="_blank" rel="noopener">Amazon ストア</a></li>
-                        <li><a href="https://auctions.yahoo.co.jp/seller/68mBTSA7m4TsArky7vfUf31WWP38V" target="_blank" rel="noopener">ヤフオク! ストア</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-col">
-                    <h4>SNS・メディア</h4>
-                    <ul>
-                        <li><a href="https://note.com/teraism" target="_blank" rel="noopener">note</a></li>
-                        <li><a href="https://x.com/TERAISM" target="_blank" rel="noopener">X (Twitter)</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container sectionBox copySection text-center">
-            <p>Copyright &copy; 有限会社ライトテクニカル All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="text-center mt-20">
+      <a href="reports.html" class="btn-outline">レポートをもっと見る →</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Bootstrap 4 JS (Lightning テーマ準拠) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- ========== Footer ========== -->
+<footer class="siteFooter">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>ショップ</h4>
+        <ul>
+          <li><a href="shop.html">商品一覧</a></li>
+          <li><a href="cart.html">カート</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>コンテンツ</h4>
+        <ul>
+          <li><a href="technology.html">技術紹介</a></li>
+          <li><a href="reports.html">ユーザーズレポート</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>会社情報</h4>
+        <ul>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="https://www.light-technical.com/" target="_blank">コーポレートサイト</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>外部リンク</h4>
+        <ul>
+          <li><a href="https://www.amazon.co.jp/stores/TERAISM%E7%87%83%E8%B2%BB%E5%90%91%E4%B8%8A%E7%B3%BB%E3%82%AB%E3%83%BC%E3%83%91%E3%83%BC%E3%83%84/page/D6041CA1-DF77-4AAE-81E8-C6A9E9E9A1BC" target="_blank"><i class="fab fa-amazon"></i> Amazon ストア</a></li>
+          <li><a href="https://auctions.yahoo.co.jp/seller/68mBTSA7m4TsArky7vfUf31WWP38V" target="_blank">Yahoo!オークション</a></li>
+          <li><a href="https://note.com/teraism" target="_blank"><i class="fas fa-pen-nib"></i> note</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 有限会社ライトテクニカル All Rights Reserved.
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

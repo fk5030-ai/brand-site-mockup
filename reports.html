@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ユーザーズレポート｜TERAISM® 公式ショップ</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="siteHeader">
+  <div class="container">
+    <a href="index.html" class="siteLogo">TERAISM®<span>by Light Technical</span></a>
+    <button class="menuToggle" onclick="document.querySelector('.gMenu').classList.toggle('is-open')"><i class="fas fa-bars"></i></button>
+    <ul class="gMenu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="shop.html">ショップ</a></li>
+      <li><a href="technology.html">技術紹介</a></li>
+      <li><a href="reports.html" class="is-active">ユーザーズレポート</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="company.html">会社概要</a></li>
+      <li><a href="cart.html" class="cartIcon"><i class="fas fa-shopping-cart"></i><span class="badge">2</span></a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding:40px 15px;">
+  <div class="container">
+    <h1 style="font-size:1.6rem;">ユーザーズレポート</h1>
+    <p style="font-size:.9rem;">TERAISM® を使ったお客様のリアルな声をお届けします</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- 統計 -->
+    <div class="report-stats">
+      <div class="stat-card"><span class="num">248</span><span class="label">投稿数</span></div>
+      <div class="stat-card"><span class="num">47</span><span class="label">車種</span></div>
+      <div class="stat-card"><span class="num">12</span><span class="label">製品組み合わせ</span></div>
+    </div>
+
+    <!-- フィルター -->
+    <div class="filter-tabs">
+      <button class="active">すべて</button>
+      <button>EC-13</button>
+      <button>EC-13SP</button>
+      <button>EC-15B2</button>
+      <button>EX-01SP</button>
+      <button>RP-01B</button>
+      <button>セット使用</button>
+    </div>
+
+    <!-- 投稿ボタン -->
+    <div class="text-center mb-40">
+      <a href="report-post.html" class="btn-green"><i class="fas fa-pen"></i> レポートを投稿する</a>
+    </div>
+
+    <!-- レポートA -->
+    <div class="report-card">
+      <div class="report-header">
+        <div class="avatar"><i class="fas fa-user"></i></div>
+        <div class="user-info">
+          <div class="name">Y.T さん</div>
+          <div class="date">2026.04.10</div>
+        </div>
+      </div>
+      <div class="report-meta">
+        <span class="tag">トヨタ ヤリスクロス（2022）</span>
+        <span class="tag">EC-13 + EC-15B2</span>
+        <span class="tag">走行距離：35,000km</span>
+      </div>
+      <p class="report-body">装着後3日のエイジングを経て、明らかにアクセルレスポンスが良くなりました。通勤片道15kmでの燃費が約1.2km/L向上。ECUリセット後はさらに改善を実感しています。妻も「なんか最近車が静かだね」と言っていたので、プラシーボではないと思います。</p>
+      <div class="report-data">
+        <div class="data-item"><span class="data-label">装着前燃費</span><span class="data-value">18.2 km/L</span></div>
+        <div class="data-item"><span class="data-label">装着後燃費</span><span class="data-value">19.4 km/L</span></div>
+        <div class="data-item"><span class="data-label">測定距離</span><span class="data-value">450 km</span></div>
+        <div class="data-item"><span class="data-label">測定方法</span><span class="data-value">車載燃費計</span></div>
+      </div>
+      <div class="report-actions">
+        <button><i class="fas fa-thumbs-up"></i> 参考になった（24）</button>
+        <button><i class="fas fa-comment"></i> コメント（3）</button>
+      </div>
+    </div>
+
+    <!-- レポートB -->
+    <div class="report-card">
+      <div class="report-header">
+        <div class="avatar"><i class="fas fa-user"></i></div>
+        <div class="user-info">
+          <div class="name">M.K さん</div>
+          <div class="date">2026.04.05</div>
+        </div>
+      </div>
+      <div class="report-meta">
+        <span class="tag">ホンダ N-BOX（2023）</span>
+        <span class="tag">EC-13SP + EX-01SP</span>
+        <span class="tag">走行距離：12,000km</span>
+      </div>
+      <p class="report-body">軽自動車なので効果が出やすいのか、装着翌日から違いを感じました。特に坂道での粘りが明らかに違います。EX-01SPをエンジンルームに追加してからはさらにトルク感が増した印象。高速道路の合流が怖くなくなりました。</p>
+      <div class="report-data">
+        <div class="data-item"><span class="data-label">装着前燃費</span><span class="data-value">22.1 km/L</span></div>
+        <div class="data-item"><span class="data-label">装着後燃費</span><span class="data-value">24.8 km/L</span></div>
+        <div class="data-item"><span class="data-label">測定距離</span><span class="data-value">800 km</span></div>
+        <div class="data-item"><span class="data-label">測定方法</span><span class="data-value">満タン法</span></div>
+      </div>
+      <div class="report-actions">
+        <button><i class="fas fa-thumbs-up"></i> 参考になった（18）</button>
+        <button><i class="fas fa-comment"></i> コメント（5）</button>
+      </div>
+    </div>
+
+    <!-- レポートC -->
+    <div class="report-card">
+      <div class="report-header">
+        <div class="avatar"><i class="fas fa-user"></i></div>
+        <div class="user-info">
+          <div class="name">T.S さん</div>
+          <div class="date">2026.03.22</div>
+        </div>
+      </div>
+      <div class="report-meta">
+        <span class="tag">トヨタ プリウス（2021）</span>
+        <span class="tag">EC-13 + RP-01B</span>
+        <span class="tag">走行距離：48,000km</span>
+      </div>
+      <p class="report-body">ハイブリッド車ですが、EV走行の頻度が上がったような気がします。特に冬場のエンジン始動が早くモーターに切り替わるようになりました。RP-01Bをリアに貼ったあと、高速域の安定感も増した印象です。</p>
+      <div class="report-data">
+        <div class="data-item"><span class="data-label">装着前燃費</span><span class="data-value">28.3 km/L</span></div>
+        <div class="data-item"><span class="data-label">装着後燃費</span><span class="data-value">30.1 km/L</span></div>
+        <div class="data-item"><span class="data-label">測定距離</span><span class="data-value">1,200 km</span></div>
+        <div class="data-item"><span class="data-label">測定方法</span><span class="data-value">車載燃費計</span></div>
+      </div>
+      <div class="report-actions">
+        <button><i class="fas
